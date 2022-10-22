@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/kzmijak/gotutorial/lessons/goroutines"
+	"github.com/kzmijak/gotutorial/lessons"
 )
 
 func main () {
-	goroutines.Execute()
+	lessons.Goroutines()
 }

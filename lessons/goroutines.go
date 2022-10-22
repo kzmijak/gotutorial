@@ -1,4 +1,4 @@
-package goroutines
+package lessons
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func f(from string) {
     }
 }
 
-func Execute() {
+func Goroutines() {
     f("direct")
 
     go f("goroutine")
