@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/kzmijak/go/lessons/goroutines.go"
+	"github.com/kzmijak/gotutorial/lessons/goroutines"
 )
 
 func main () {
