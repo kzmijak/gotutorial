@@ -4,6 +4,6 @@ import (
 	"github.com/kzmijak/gotutorial/lessons"
 )
 
-func main () {
-	lessons.Goroutines()
+func main() {
+	lessons.Workers()
 }

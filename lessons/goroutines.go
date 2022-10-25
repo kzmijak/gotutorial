@@ -6,20 +6,20 @@ import (
 )
 
 func f(from string) {
-    for i := 0; i < 3; i++ {
-        fmt.Println(from, ":", i)
-    }
+	for i := 0; i < 3; i++ {
+		fmt.Println(from, ":", i)
+	}
 }
 
 func Goroutines() {
-    f("direct")
+	f("direct")
 
-    go f("goroutine")
+	go f("goroutine")
 
-    go func(msg string) {
-        fmt.Println(msg)
-    }("going")
+	go func(msg string) {
+		fmt.Println(msg)
+	}("going")
 
-    time.Sleep(time.Second)
-    fmt.Println("done")
+	time.Sleep(time.Second)
+	fmt.Println("done")
 }
