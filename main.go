@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	lessons.WaitGroups()
+	lessons.RangeOverChannels()
 }
