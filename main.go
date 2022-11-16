@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	lessons.Workers()
+	lessons.WaitGroups()
 }

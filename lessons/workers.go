@@ -20,16 +20,15 @@ func Workers() {
 	storage := make(chan string, numJobs)
 
 	// installing the workers
-	for i := 1; i <= 3; i ++ {
+	for i := 1; i <= 3; i++ {
 		go unpackTheDelivery(packages, storage, i)
 	}
 
-	
 	for i := 1; i <= numJobs; i++ {
 		fmt.Println("Postal delivered package", i)
 		packages <- fmt.Sprintf("My little pony %d", i)
 	}
-	
+
 	close(packages)
 
 	for i := 1; i <= numJobs; i++ {
